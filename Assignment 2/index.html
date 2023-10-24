@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!---------------------------------------------------Title Container-------------------------------------------------------------->
+        <div class="title-container">
+            <div class="WG-Title-BG">
+                <div class="Black-Graveyard-title">
+                    <h1>Black Graveyard</h1>
+                </div>
+                <div class="title">
+                    <h1>Player 1 Vs Player 2</h1>
+                </div>
+                <div class="White-Graveyard-title">
+                    <h1>White Graveyard</h1>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------Board Container------------------------------------------------------------->
+        <div class="board-container">
+
+            <!--------------Black Graveyard------------------->
+            <div class="Black-Graveyard">
+                <ul>
+                    <div class="Bgraveyard" id="Dpawn">
+                        <li class="wsquare bqueen" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Bgraveyard" id="Dknight">
+                        <li class="wsquare brook" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Bgraveyard" id="Dbishop">
+                        <li class="wsquare bbishop" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Bgraveyard" id="Drook">
+                        <li class="wsquare bknight" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Bgraveyard" id="Dqueen">
+                        <li class="wsquare bpawn" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                </ul>
+            </div>
+
+            <!--------------Chess Board: Making 8x8 grid------------------->
+            <div class="chess">
+                <ul>
+                    <!--Format: Classes of 8 rows and then 8 columns inside each row
+
+                    Row 8 [][][][][][][][] Black starts here
+                    Row 7 [][][][][][][][] Black starts here
+                    Row 6 [][][][][][][][]
+                    Row 5 [][][][][][][][]
+                    Row 4 [][][][][][][][]
+                    Row 3 [][][][][][][][]
+                    Row 2 [][][][][][][][] White starts here
+                    Row 1 [][][][][][][][] White starts here
+
+                    Each square on board is has unique id by (row number, column number) eg. 8a -> (Row 8, column a)---------->
+
+                    <div class="board" id="row8">
+                        <li class="wsquare brook" id="8a"></li>
+                        <li class="bsquare bknight" id="8b"></li>
+                        <li class="wsquare bbishop" id="8c"></li>
+                        <li class="bsquare bqueen" id="8d"></li>
+                        <li class="wsquare bking" id="8e"></li>
+                        <li class="bsquare bbishop" id="8f"></li>
+                        <li class="wsquare bknight" id="8g"></li>
+                        <li class="bsquare brook" id="8h"></li>
+                    </div>
+                    <div class="board" id="row7">
+                        <li class="bsquare bpawn" id="7a"></li>
+                        <li class="wsquare bpawn" id="7b"></li>
+                        <li class="bsquare bpawn" id="7c"></li>
+                        <li class="wsquare bpawn" id="7d"></li>
+                        <li class="bsquare bpawn" id="7e"></li>
+                        <li class="wsquare bpawn" id="7f"></li>
+                        <li class="bsquare bpawn" id="7g"></li>
+                        <li class="wsquare bpawn" id="7h"></li>
+                    </div>
+                    <div class="board" id="row6">
+                        <li class="wsquare" id="6a"></li>
+                        <li class="bsquare" id="6b"></li>
+                        <li class="wsquare" id="6c"></li>
+                        <li class="bsquare" id="6d"></li>
+                        <li class="wsquare" id="6e"></li>
+                        <li class="bsquare" id="6f"></li>
+                        <li class="wsquare" id="6g"></li>
+                        <li class="bsquare" id="6h"></li>
+                    </div>
+                    <div class="board" id="row5">
+                        <li class="bsquare" id="5a"></li>
+                        <li class="wsquare" id="5b"></li>
+                        <li class="bsquare" id="5c"></li>
+                        <li class="wsquare" id="5d"></li>
+                        <li class="bsquare" id="5e"></li>
+                        <li class="wsquare" id="5f"></li>
+                        <li class="bsquare" id="5g"></li>
+                        <li class="wsquare" id="5h"></li>
+                    </div>
+                    <div class="board" id="row4">
+                        <li class="wsquare" id="4a"></li>
+                        <li class="bsquare" id="4b"></li>
+                        <li class="wsquare" id="4c"></li>
+                        <li class="bsquare" id="4d"></li>
+                        <li class="wsquare" id="4e"></li>
+                        <li class="bsquare" id="4f"></li>
+                        <li class="wsquare" id="4g"></li>
+                        <li class="bsquare" id="4h"></li>
+                    </div>
+                    <div class="board" id="row3">
+                        <li class="bsquare" id="3a"></li>
+                        <li class="wsquare" id="3b"></li>
+                        <li class="bsquare" id="3c"></li>
+                        <li class="wsquare" id="3d"></li>
+                        <li class="bsquare" id="3e"></li>
+                        <li class="wsquare" id="3f"></li>
+                        <li class="bsquare" id="3g"></li>
+                        <li class="wsquare" id="3h"></li>
+                    </div>
+                    <div class="board" id="row2">
+                        <li class="wsquare wpawn" id="2a"></li>
+                        <li class="bsquare wpawn" id="2b"></li>
+                        <li class="wsquare wpawn" id="2c"></li>
+                        <li class="bsquare wpawn" id="2d"></li>
+                        <li class="wsquare wpawn" id="2e"></li>
+                        <li class="bsquare wpawn" id="2f"></li>
+                        <li class="wsquare wpawn" id="2g"></li>
+                        <li class="bsquare wpawn" id="2h"></li>
+                    </div>
+                    <div class="board" id="row1">
+                        <li class="bsquare wrook" id="1a"></li>
+                        <li class="wsquare wknight" id="1b"></li>
+                        <li class="bsquare wbishop" id="1c"></li>
+                        <li class="wsquare wqueen" id="1d"></li>
+                        <li class="bsquare wking" id="1e"></li>
+                        <li class="wsquare wbishop" id="1f"></li>
+                        <li class="bsquare wknight" id="1g"></li>
+                        <li class="wsquare wrook" id="1h"></li>
+                    </div>
+                </ul>
+
+                <!--------------Showing whose turn it is / Reset button-------------->
+                <div class="turn-and-reset">
+                    <div class="whoseTurn">
+                        <h2 id="turn">Player 1 - White's Turn</h2>
+                    </div>
+                    <div class="reset-btn">
+                        <h2 id="reset-button">Reset</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------White Graveyard------------------->
+            <div class="White-Graveyard">
+                <ul>
+                    <div class="Wgraveyard" id="Dpawn">
+                        <li class="wsquare wqueen" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Wgraveyard" id="Dknight">
+                        <li class="wsquare wrook" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Wgraveyard" id="Dbishop">
+                        <li class="wsquare wbishop" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Wgraveyard" id="Drook">
+                        <li class="wsquare wknight" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                    <div class="Wgraveyard" id="Dqueen">
+                        <li class="wsquare wpawn" id=""></li>
+                        <li class="wsquare" id="">0</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    place-items: center;
+    justify-content: center;
+    overflow: auto;
+    background: url(pictures/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*---------Title Container------------*/
+.title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*---------Board Container------------*/
+.board-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-------------Style the titles-------------*/
+.WG-Title-BG{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------------------------Black Graveyard----------------------------*/
+.WG-Title-BG .Black-Graveyard-title h1{
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.WG-Title-BG .Black-Graveyard-title{
+    margin-right: 200px;
+}
+
+.Bgraveyard{
+    display: flex;
+}
+
+ul{
+    display:grid;
+    grid-template-columns: 1fr; /*--fraction of space/responsive--*/
+}
+
+li{
+    list-style: none;
+    display: grid;
+    place-items: center;
+}
+
+.bsquare{
+    margin: .5px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0); /*-------Makes the grid visible--------*/
+    background-color: rgb(102, 100, 100);
+}
+
+.wsquare{
+    margin: .5px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0); /*-------Makes the grid visible--------*/
+    background-color: white;
+}
+
+/*-------------------------PVP Title----------------------------------*/
+.WG-Title-BG .title h1{
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+/*-------------------------White Graveyard----------------------------*/
+.WG-Title-BG .White-Graveyard-title h1{
+    margin-bottom: 20px;
+    margin-top: 70px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.WG-Title-BG .White-Graveyard-title{
+    margin-left: 200px;
+    
+}
+
+.Wgraveyard{
+    display: flex;
+}
+
+
+/*--------------------Making 8x8 playing grid------------------------*/
+.chess{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+.board{
+    display: flex;
+}
+
+.chess li{
+    font-size: 0px;
+}
+
+.brook{
+    background-image: url('pictures/Brook.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bknight{
+    background-image: url('pictures/Bknight.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bbishop{
+    background-image: url('pictures/Bbishop.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bqueen{
+    background-image: url('pictures/Bqueen.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bking{
+    background-image: url('pictures/Bking.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bpawn{
+    background-image: url('pictures/Bpawn.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrook{
+    background-image: url('pictures/Wrook.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wknight{
+    background-image: url('pictures/Wknight.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wbishop{
+    background-image: url('pictures/Wbishop.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wqueen{
+    background-image: url('pictures/wqueen.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wking{
+    background-image: url('pictures/Wking.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wpawn{
+    background-image: url('pictures/Wpawn.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*-------------------------Player Turn & Reset----------------------------------*/
+.turn-and-reset{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#turn{
+    margin-top: 30px;
+
+    font-size: 25px;
+    text-align: left;
+    background-color: white;
+    color:black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#reset-button{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
