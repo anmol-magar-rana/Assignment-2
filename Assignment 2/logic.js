@@ -1,3 +1,10 @@
+//Course: SENG 513
+//Date: Oct 19, 2023
+//Assignment 2
+//Name: Anmol Rana
+//UCID: 30159019
+//Game: Chess
+
 //function turn()
 //every time a piece makes a legal move, the box below updates whose turn it is
 
