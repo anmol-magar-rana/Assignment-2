@@ -1,4 +1,11 @@
-Id like to explain more the big chunk of code in logic.js from line 92 to 187.
+I'd like to explain more about the big chunk of code in logic.js from lines 92 to 187.
 
 when the square gets clicked on, I would get the id of the square with the chess piece. It would be from the range 11-88 (row 1 column 1 to row 8 column 8)
-Then I would convert it into a three-digit number 'a' 
+This two-digit number would be used to calculate the pawn's legal moves, which are the two squares in front of it if it hasn't moved yet, and only one square in front of it if it has moved.
+Hence I would add 10 to it since that would mean the row in front of the white pawn and subtract 10 since that would mean the row below the black pawn(which is in front for it)
+And I would be able to check for possible captures (pawn captures diagonally up) by adding or subtracting 10 and adding or subtracting 1 which means it looks at the upper/lower left and right square
+Once these squares have been identified, I have changed their background color to highlight on the board and to the player that these are the legal moves for the pawn they have clicked on
+
+Afterward, I intended to include the logic similarly for the rest of the pieces but the pawn logic was imperfect with the other functions so I did not have time to debug and add them.
+
+After that comes the toggling of the players, where if it was white who moved then the above would be called on the black pieces and vice versa. 
