@@ -1,0 +1,4 @@
+Id like to explain more the big chunk of code in logic.js from line 92 to 187.
+
+when the square gets clicked on, I would get the id of the square with the chess piece. It would be from the range 11-88 (row 1 column 1 to row 8 column 8)
+Then I would convert it into a three-digit number 'a' 
