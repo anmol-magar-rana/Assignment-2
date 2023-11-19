@@ -1,10 +1,15 @@
+<!-- Course: SENG 513 -->
+<!-- Date: Nov 13, 2023 -->
+<!-- Assignment 3 -->
+<!-- Name: Anmol Rana -->
+<!-- UCID: 30159019 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Chess</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,24 +37,24 @@
             <div class="Black-Graveyard">
                 <ul>
                     <div class="Bgraveyard" id="Dpawn">
-                        <li class="wsquare bqueen" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave blackqueen" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Bgraveyard" id="Dknight">
-                        <li class="wsquare brook" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave blackrook" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Bgraveyard" id="Dbishop">
-                        <li class="wsquare bbishop" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave blackbishop" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Bgraveyard" id="Drook">
-                        <li class="wsquare bknight" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave blackknight" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Bgraveyard" id="Dqueen">
-                        <li class="wsquare bpawn" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave blackpawn" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                 </ul>
             </div>
@@ -71,94 +76,97 @@
                     Each square on board is has unique id by (row number, column number) eg. 8a -> (Row 8, column a)---------->
 
                     <div class="board" id="row8">
-                        <li class="wsquare brook" id="8a"></li>
-                        <li class="bsquare bknight" id="8b"></li>
-                        <li class="wsquare bbishop" id="8c"></li>
-                        <li class="bsquare bqueen" id="8d"></li>
-                        <li class="wsquare bking" id="8e"></li>
-                        <li class="bsquare bbishop" id="8f"></li>
-                        <li class="wsquare bknight" id="8g"></li>
-                        <li class="bsquare brook" id="8h"></li>
+                        <li class="square" id="81">blackrook</li>
+                        <li class="square" id="82">blackknight</li>
+                        <li class="square" id="83">blackbishop</li>
+                        <li class="square" id="84">blackqueen</li>
+                        <li class="square" id="85">blackknight</li>
+                        <li class="square" id="86">blackbishop</li>
+                        <li class="square" id="87">blackknight</li>
+                        <li class="square" id="88">blackrook</li>
                     </div>
                     <div class="board" id="row7">
-                        <li class="bsquare bpawn" id="7a"></li>
-                        <li class="wsquare bpawn" id="7b"></li>
-                        <li class="bsquare bpawn" id="7c"></li>
-                        <li class="wsquare bpawn" id="7d"></li>
-                        <li class="bsquare bpawn" id="7e"></li>
-                        <li class="wsquare bpawn" id="7f"></li>
-                        <li class="bsquare bpawn" id="7g"></li>
-                        <li class="wsquare bpawn" id="7h"></li>
+                        <li class="square" id="71">blackpawn</li>
+                        <li class="square" id="72">blackpawn</li>
+                        <li class="square" id="73">blackpawn</li>
+                        <li class="square" id="74">blackpawn</li>
+                        <li class="square" id="75">blackpawn</li>
+                        <li class="square" id="76">blackpawn</li>
+                        <li class="square" id="77">blackpawn</li>
+                        <li class="square" id="78">blackpawn</li>
                     </div>
                     <div class="board" id="row6">
-                        <li class="wsquare" id="6a"></li>
-                        <li class="bsquare" id="6b"></li>
-                        <li class="wsquare" id="6c"></li>
-                        <li class="bsquare" id="6d"></li>
-                        <li class="wsquare" id="6e"></li>
-                        <li class="bsquare" id="6f"></li>
-                        <li class="wsquare" id="6g"></li>
-                        <li class="bsquare" id="6h"></li>
+                        <li class="square" id="61"></li>
+                        <li class="square" id="62"></li>
+                        <li class="square" id="63"></li>
+                        <li class="square" id="64"></li>
+                        <li class="square" id="65"></li>
+                        <li class="square" id="66"></li>
+                        <li class="square" id="67"></li>
+                        <li class="square" id="68"></li>
                     </div>
                     <div class="board" id="row5">
-                        <li class="bsquare" id="5a"></li>
-                        <li class="wsquare" id="5b"></li>
-                        <li class="bsquare" id="5c"></li>
-                        <li class="wsquare" id="5d"></li>
-                        <li class="bsquare" id="5e"></li>
-                        <li class="wsquare" id="5f"></li>
-                        <li class="bsquare" id="5g"></li>
-                        <li class="wsquare" id="5h"></li>
+                        <li class="square" id="51"></li>
+                        <li class="square" id="52"></li>
+                        <li class="square" id="53"></li>
+                        <li class="square" id="54"></li>
+                        <li class="square" id="55"></li>
+                        <li class="square" id="56"></li>
+                        <li class="square" id="57"></li>
+                        <li class="square" id="58"></li>
                     </div>
                     <div class="board" id="row4">
-                        <li class="wsquare" id="4a"></li>
-                        <li class="bsquare" id="4b"></li>
-                        <li class="wsquare" id="4c"></li>
-                        <li class="bsquare" id="4d"></li>
-                        <li class="wsquare" id="4e"></li>
-                        <li class="bsquare" id="4f"></li>
-                        <li class="wsquare" id="4g"></li>
-                        <li class="bsquare" id="4h"></li>
+                        <li class="square" id="41"></li>
+                        <li class="square" id="42"></li>
+                        <li class="square" id="43"></li>
+                        <li class="square" id="44"></li>
+                        <li class="square" id="45"></li>
+                        <li class="square" id="46"></li>
+                        <li class="square" id="47"></li>
+                        <li class="square" id="48"></li>
                     </div>
                     <div class="board" id="row3">
-                        <li class="bsquare" id="3a"></li>
-                        <li class="wsquare" id="3b"></li>
-                        <li class="bsquare" id="3c"></li>
-                        <li class="wsquare" id="3d"></li>
-                        <li class="bsquare" id="3e"></li>
-                        <li class="wsquare" id="3f"></li>
-                        <li class="bsquare" id="3g"></li>
-                        <li class="wsquare" id="3h"></li>
+                        <li class="square" id="31"></li>
+                        <li class="square" id="32"></li>
+                        <li class="square" id="33"></li>
+                        <li class="square" id="34"></li>
+                        <li class="square" id="35"></li>
+                        <li class="square" id="36"></li>
+                        <li class="square" id="37"></li>
+                        <li class="square" id="38"></li>
                     </div>
                     <div class="board" id="row2">
-                        <li class="wsquare wpawn" id="2a"></li>
-                        <li class="bsquare wpawn" id="2b"></li>
-                        <li class="wsquare wpawn" id="2c"></li>
-                        <li class="bsquare wpawn" id="2d"></li>
-                        <li class="wsquare wpawn" id="2e"></li>
-                        <li class="bsquare wpawn" id="2f"></li>
-                        <li class="wsquare wpawn" id="2g"></li>
-                        <li class="bsquare wpawn" id="2h"></li>
+                        <li class="square" id="21">whitepawn</li>
+                        <li class="square" id="22">whitepawn</li>
+                        <li class="square" id="23">whitepawn</li>
+                        <li class="square" id="24">whitepawn</li>
+                        <li class="square" id="25">whitepawn</li>
+                        <li class="square" id="26">whitepawn</li>
+                        <li class="square" id="27">whitepawn</li>
+                        <li class="square" id="28">whitepawn</li>
                     </div>
                     <div class="board" id="row1">
-                        <li class="bsquare wrook" id="1a"></li>
-                        <li class="wsquare wknight" id="1b"></li>
-                        <li class="bsquare wbishop" id="1c"></li>
-                        <li class="wsquare wqueen" id="1d"></li>
-                        <li class="bsquare wking" id="1e"></li>
-                        <li class="wsquare wbishop" id="1f"></li>
-                        <li class="bsquare wknight" id="1g"></li>
-                        <li class="wsquare wrook" id="1h"></li>
+                        <li class="square" id="11">whiterook</li>
+                        <li class="square" id="12">whiteknight</li>
+                        <li class="square" id="13">whitebishop</li>
+                        <li class="square" id="14">whitequeen</li>
+                        <li class="square" id="15">whiteking</li>
+                        <li class="square" id="16">whitebishop</li>
+                        <li class="square" id="17">whiteknight</li>
+                        <li class="square" id="18">whiterook</li>
                     </div>
                 </ul>
 
                 <!--------------Showing whose turn it is / Reset button-------------->
                 <div class="turn-and-reset">
                     <div class="whoseTurn">
-                        <h2 id="turn">Player 1 - White's Turn</h2>
+                        <p id="tog">White's Turn</p>
                     </div>
                     <div class="reset-btn">
                         <h2 id="reset-button">Reset</h2>
+                    </div>
+                    <div class="rules">
+                        <a href="https://en.wikipedia.org/wiki/Rules_of_chess">Rules</a>
                     </div>
                 </div>
             </div>
@@ -167,24 +175,24 @@
             <div class="White-Graveyard">
                 <ul>
                     <div class="Wgraveyard" id="Dpawn">
-                        <li class="wsquare wqueen" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave whitequeen" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Wgraveyard" id="Dknight">
-                        <li class="wsquare wrook" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave whiterook" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Wgraveyard" id="Dbishop">
-                        <li class="wsquare wbishop" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave whitebishop" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Wgraveyard" id="Drook">
-                        <li class="wsquare wknight" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave whiteknight" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                     <div class="Wgraveyard" id="Dqueen">
-                        <li class="wsquare wpawn" id=""></li>
-                        <li class="wsquare" id="">0</li>
+                        <li class="grave whitepawn" id=""></li>
+                        <li class="gsquare" id="">0</li>
                     </div>
                 </ul>
             </div>
@@ -194,6 +202,7 @@
 
     </div>
     
+    <script src="logic.js"></script>
 
 </body>
 </html>

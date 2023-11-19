@@ -1,3 +1,8 @@
+/* Course: SENG 513 */
+/* Date: Nov 13, 2023 */
+/* Assignment 3 */
+/* Name: Anmol Rana */
+/* UCID: 30159019 */
 
 *{
     margin: 0;
@@ -69,20 +74,35 @@ li{
     place-items: center;
 }
 
-.bsquare{
+.square{
     margin: .5px;
     width: 70px;
     height: 70px;
     box-shadow: 2px 2px 5px rgb(255, 0, 0); /*-------Makes the grid visible--------*/
-    background-color: rgb(102, 100, 100);
 }
 
-.wsquare{
+.light-square {
+    background-color: #f0d9b5; /* Light color */
+}
+
+.dark-square {
+    background-color: #b58863; /* Dark color */
+}
+
+.grave{
     margin: .5px;
     width: 70px;
     height: 70px;
     box-shadow: 2px 2px 5px rgb(255, 0, 0); /*-------Makes the grid visible--------*/
-    background-color: white;
+    background-color: #b58863;
+}
+
+.gsquare{
+    margin: .5px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 5px rgb(255, 0, 0); /*-------Makes the grid visible--------*/
+    background-color: #f0d9b5;
 }
 
 /*-------------------------PVP Title----------------------------------*/
@@ -136,88 +156,89 @@ li{
     font-size: 0px;
 }
 
-.brook{
-    background-image: url('pictures/Brook.png');
-    background-size: cover; /* Adjust as necessary */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.bknight{
-    background-image: url('pictures/Bknight.png');
+.blackrook {
+    background-image: url('pictures/blackrook.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.bbishop{
-    background-image: url('pictures/Bbishop.png');
+.blackknight {
+    background-image: url('pictures/blackknight.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.bqueen{
-    background-image: url('pictures/Bqueen.png');
+.blackbishop {
+    background-image: url('pictures/blackbishop.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.bking{
-    background-image: url('pictures/Bking.png');
+.blackqueen {
+    background-image: url('pictures/blackqueen.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.bpawn{
-    background-image: url('pictures/Bpawn.png');
+.blackking {
+    background-image: url('pictures/blackking.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.wrook{
-    background-image: url('pictures/Wrook.png');
-    background-size: cover; /* Adjust as necessary */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.wknight{
-    background-image: url('pictures/Wknight.png');
+.blackpawn {
+    background-image: url('pictures/blackpawn.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.wbishop{
-    background-image: url('pictures/Wbishop.png');
+.whiterook {
+    background-image: url('pictures/whiterook.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.wqueen{
-    background-image: url('pictures/wqueen.png');
+.whiteknight {
+    background-image: url('pictures/whiteknight.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.wking{
-    background-image: url('pictures/Wking.png');
+.whitebishop {
+    background-image: url('pictures/whitebishop.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.wpawn{
-    background-image: url('pictures/Wpawn.png');
+.whitequeen {
+    background-image: url('pictures/whitequeen.png');
     background-size: cover; /* Adjust as necessary */
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.whiteking {
+    background-image: url('pictures/whiteking.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.whitepawn {
+    background-image: url('pictures/whitepawn.png');
+    background-size: cover; /* Adjust as necessary */
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /*-------------------------Player Turn & Reset----------------------------------*/
 .turn-and-reset{
@@ -225,7 +246,7 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-#turn{
+#tog{
     margin-top: 30px;
 
     font-size: 25px;
@@ -248,4 +269,30 @@ li{
     padding: 10px;
     border-radius: 5px;
     cursor:pointer;
+}
+
+.rules{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*-------------------------creating circle for possible moves----------------------------------*/
+.circle{
+    width: 30%;
+    height: 30%;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.pawnCompo{
+    width: 70px;
+    height: 70px
 }
